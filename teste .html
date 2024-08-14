@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Teste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .animated-text {
+            font-size: 60px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: colorChange 3s infinite alternate;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        @keyframes colorChange {
+            from {
+                background-position: 0%;
+            }
+            to {
+                background-position: 100%;
+            }
+        }
+
+        .button {
+            padding: 15px 25px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .test-boxes {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 50px;
+        }
+
+        .test-box {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-text">TESTE</div>
+    
+    <a href="https://api.whatsapp.com/send?phone=5565996696410" class="button">Suporte via WhatsApp</a>
+    <a href="https://instagram.com/jose.potulski" class="button">Suporte via Instagram</a>
+    
+    <div class="test-boxes">
+        <div class="test-box">TESTE 1</div>
+        <div class="test-box">TESTE 2</div>
+        <div class="test-box">TESTE 3</div>
+    </div>
+</body>
+</html>
